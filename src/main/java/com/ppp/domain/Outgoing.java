@@ -1,20 +1,19 @@
-package domain;
-
-import org.springframework.data.annotation.Id;
+package com.ppp.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 public class Outgoing {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	
+	public Integer id;
+
 	private String name;
-	
+
 	private float cost;
 
 	public Outgoing() {
@@ -22,11 +21,11 @@ public class Outgoing {
 		// TODO Auto-generated constructor stub
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -45,7 +44,5 @@ public class Outgoing {
 	public void setCost(float cost) {
 		this.cost = cost;
 	}
-	
-	
-	
+
 }

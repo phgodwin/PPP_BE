@@ -1,12 +1,12 @@
-package service;
+package com.ppp.service;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import domain.Income;
-import repo.IncomeRepo;
+import com.ppp.domain.Income;
+import com.ppp.repo.IncomeRepo;
 
 @Service
 public class IncomeService {

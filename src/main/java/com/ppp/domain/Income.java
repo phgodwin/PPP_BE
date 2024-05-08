@@ -1,4 +1,4 @@
-package domain;
+package com.ppp.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,22 +10,22 @@ public class Income {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	
+	private Integer id;
+
 	private float takeHomePay;
-	
-	private float additioanlIncome;
+
+	private float additionalIncome;
 
 	public Income() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -37,16 +37,12 @@ public class Income {
 		this.takeHomePay = takeHomePay;
 	}
 
-	public float getAdditioanlIncome() {
-		return additioanlIncome;
+	public float getAdditionalIncome() {
+		return additionalIncome;
 	}
 
-	public void setAdditioanlIncome(float additioanlIncome) {
-		this.additioanlIncome = additioanlIncome;
+	public void setAdditionalIncome(float additionalIncome) {
+		this.additionalIncome = additionalIncome;
 	}
-	
-	
-	
-	
+
 }
-	
