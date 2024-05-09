@@ -18,6 +18,10 @@ public class OutgoingService {
 		// TODO Auto-generated constructor stub
 	}
 
+	public void clearOutgoings() {
+		repo.deleteAll();
+	}
+
 	public List<Outgoing> getOutgoings() {
 		return this.repo.findAll();
 	}

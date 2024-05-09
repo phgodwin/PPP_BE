@@ -49,4 +49,9 @@ public class OutgoingController {
 		service.deleteOutgoing(id);
 	}
 
+	@DeleteMapping("/clearOutgoings")
+	public void clearOutgoings() {
+		service.clearOutgoings();
+	}
+
 }
